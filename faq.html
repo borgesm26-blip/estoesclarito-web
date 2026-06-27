@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Preguntas frecuentes sobre gestión de redes, creación de contenido y asesoría. Respondemos las preguntas que siempre aparecen.">
+    <title>Preguntas frecuentes | Estoesclarito — Gestión de redes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .faq-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            margin-bottom: var(--spacing-lg);
+            border-bottom: 1px solid var(--color-border);
+            padding-bottom: var(--spacing-lg);
+        }
+
+        .faq-item:last-child {
+            border-bottom: none;
+        }
+
+        .faq-question {
+            font-weight: 600;
+            font-size: 1.1rem;
+            color: var(--color-text-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: var(--spacing-md);
+            user-select: none;
+            transition: color var(--transition-fast);
+        }
+
+        .faq-question:hover {
+            color: var(--color-pink);
+        }
+
+        .faq-toggle {
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .faq-toggle::before {
+            content: '+';
+            font-size: 1.5rem;
+            font-weight: 300;
+            line-height: 1;
+        }
+
+        .faq-item.active .faq-toggle::before {
+            content: '−';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height var(--transition-base);
+            color: var(--color-text-light);
+            line-height: var(--lh-relaxed);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+            margin-top: var(--spacing-md);
+        }
+
+        .faq-answer p {
+            margin-bottom: var(--spacing-md);
+        }
+
+        .faq-answer p:last-child {
+            margin-bottom: 0;
+        }
+
+        .faq-category {
+            margin-bottom: var(--spacing-2xl);
+        }
+
+        .faq-category h3 {
+            font-size: 1.3rem;
+            margin-bottom: var(--spacing-lg);
+            padding-bottom: var(--spacing-md);
+            border-bottom: 2px solid var(--color-border);
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="/" class="logo">Estoesclarito</a>
+                <ul class="nav-links">
+                    <li><a href="/servicios.html">Servicios</a></li>
+                    <li><a href="/trabajo.html">Trabajo</a></li>
+                    <li><a href="/sobre-mi.html">Sobre mí</a></li>
+                    <li><a href="/contacto.html">Contacto</a></li>
+                </ul>
+                <a href="/contacto.html" class="btn btn-primary">Hablemos</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <div class="container">
+                <h1>Preguntas frecuentes.</h1>
+                <p style="font-size: 1.25rem; color: #666; margin-bottom: var(--spacing-lg);">Las que siempre aparecen antes de empezar. Si la tuya no está acá, escribime.</p>
+                <a href="https://wa.me/5491171291169?text=Hola%2C%20vi%20tu%20sitio%20web%20y%20me%20interesa%20saber%20m%C3%A1s" class="link-arrow link-pink">Escribir por WhatsApp →</a>
+            </div>
+        </section>
+
+        <!-- FAQ -->
+        <section style="background-color: var(--color-bg-light);">
+            <div class="container">
+                <div class="faq-container">
+                    <!-- SOBRE LOS SERVICIOS -->
+                    <div class="faq-category">
+                        <h3>Sobre los servicios</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿Qué incluye la gestión de redes?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Estrategia mensual, calendario editorial, publicación, monitoreo de actividad, soporte de comunidad (dentro del alcance acordado) y reporte mensual.</p>
+                                <p>Para casos que lo requieran, también incluye manual de crisis. Todo se define en la propuesta, adaptada a tu negocio.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿Puedo contratar solo la fotografía sin la gestión?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Sí. Creación de contenido es un servicio independiente. Puedes contratar producción de foto y video sin que gestionemos tus redes.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿En qué redes trabajan?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Principalmente Instagram, Facebook y TikTok. Antes de empezar analizamos dónde está tu audiencia y nos enfocamos en las plataformas que tienen sentido para tu negocio.</p>
+                                <p>No tiene sentido estar en todas si tu cliente solo está en dos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SOBRE EL PROCESO -->
+                    <div class="faq-category">
+                        <h3>Sobre el proceso</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿Cómo apruebo el contenido antes de que se publique?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Te mandamos el calendario de contenido del mes para que lo revises antes de publicar nada. Puedes pedir cambios, aprobar o ajustar.</p>
+                                <p>Nada sale sin tu visto bueno.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿Cómo es el primer mes de trabajo juntos?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Empezamos con un diagnóstico de tu situación actual. De ahí armamos la estrategia y el primer calendario. El primer mes suele tener más idas y vueltas mientras alineamos la voz y el estilo de tu marca.</p>
+                                <p>A partir del segundo, el proceso fluye solo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SOBRE TIEMPOS Y RESULTADOS -->
+                    <div class="faq-category">
+                        <h3>Sobre tiempos y resultados</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿Cuánto tarda en verse resultados?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Depende de muchos factores: el punto de partida, la industria, la frecuencia de publicación y el presupuesto en ads (si hay).</p>
+                                <p>Lo que puedo decirte con certeza: en un mes no hay estrategia que muestre resultados reales. Por eso el mínimo es 3 meses.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿Por qué el mínimo es 3 meses?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Porque las redes necesitan tiempo para mostrar resultados. El primer mes es de arranque y ajuste. El segundo empieza a tener ritmo. El tercero es donde se empieza a ver el impacto real.</p>
+                                <p>No te voy a vender algo y desaparecer al mes. Ni tú puedes evaluar si funciona en 30 días.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SOBRE PRECIOS -->
+                    <div class="faq-category">
+                        <h3>Sobre precios</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿Cuánto cuesta?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Todo es a medida. El precio depende de: qué servicios necesitas, cuántas redes, frecuencia de publicación y si incluye producción de contenido.</p>
+                                <p>La primera conversación es sin costo. Ahí entiendo qué necesitas y te mando una propuesta real.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿Hay precios fijos o paquetes?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>No trabajo con paquetes estándar. Cada cliente tiene necesidades distintas y no tiene sentido cobrar lo mismo por algo que no es lo mismo.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SOBRE LAS CONDICIONES -->
+                    <div class="faq-category">
+                        <h3>Sobre las condiciones</h3>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿Qué pasa si quiero cancelar antes de los 3 meses?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>El compromiso mínimo es 3 meses. Las condiciones exactas (aviso previo, últimas semanas) quedan especificadas en el contrato antes de empezar. Sin letra chica.</p>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <span>¿Qué pasa si hay una crisis en mis redes?</span>
+                                <div class="faq-toggle"></div>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Para los casos que lo requieren, armamos un manual de crisis específico para tu marca. Definimos qué tipo de situaciones pueden surgir, cómo responder y en cuánto tiempo.</p>
+                                <p>Si algo ocurre, no improvisamos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA FINAL -->
+                <div style="text-align: center; margin-top: var(--spacing-3xl); padding-top: var(--spacing-2xl); border-top: 1px solid var(--color-border);">
+                    <h3>¿Tu pregunta no está acá?</h3>
+                    <a href="https://wa.me/5491171291169?text=Hola%2C%20vi%20tu%20sitio%20web%20y%20me%20interesa%20saber%20m%C3%A1s" class="btn btn-primary">Escribir por WhatsApp</a>
+                    <p style="margin-top: var(--spacing-md); font-size: 0.95rem; color: #666;">Respondemos de verdad. Sin autorespondedor.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <p class="footer-brand">Estoesclarito</p>
+                </div>
+                <div class="footer-section">
+                    <nav class="footer-links">
+                        <a href="/">Inicio</a>
+                        <a href="/servicios.html">Servicios</a>
+                        <a href="/trabajo.html">Trabajo</a>
+                        <a href="/sobre-mi.html">Sobre mí</a>
+                        <a href="/faq.html">FAQ</a>
+                        <a href="/contacto.html">Contacto</a>
+                    </nav>
+                </div>
+                <div class="footer-section">
+                    <a href="https://instagram.com/estoesclarito" class="footer-link">Instagram →</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 Estoesclarito. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // FAQ Accordion functionality
+        document.querySelectorAll('.faq-item').forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', function() {
+                // Close all other items
+                document.querySelectorAll('.faq-item').forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    </script>
+</body>
+</html>
