@@ -241,19 +241,24 @@ section.hero {
 
 section.problem {
     padding: var(--spacing-3xl) 0;
-    text-align: center;
 }
 
 section.problem h2 {
     color: var(--color-text-dark);
     margin-bottom: var(--spacing-lg);
+    text-align: center;
 }
 
-section.problem p {
+section.problem > .container > p:first-of-type {
     font-size: 1.25rem;
     color: var(--color-text-light);
     max-width: 700px;
     margin: 0 auto;
+    text-align: center;
+}
+
+section.problem > .container > div {
+    text-align: left;
 }
 
 section.differentiator {
