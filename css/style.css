@@ -642,6 +642,11 @@ iframe:hover {
         padding: var(--spacing-2xl) 0;
     }
 
+    section.hero > .container > div {
+        grid-template-columns: 1fr !important;
+        gap: var(--spacing-2xl) !important;
+    }
+
     .cta-group {
         flex-direction: column;
         width: 100%;
