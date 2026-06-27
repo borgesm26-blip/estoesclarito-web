@@ -231,11 +231,11 @@ a {
    ============================================ */
 
 section {
-    padding: var(--spacing-3xl) 0;
+    padding: var(--spacing-2xl) 0;
 }
 
 section.hero {
-    padding: calc(var(--spacing-3xl) * 1.5) 0;
+    padding: var(--spacing-3xl) 0;
     background-color: var(--color-white);
 }
 
@@ -348,11 +348,23 @@ section.final-cta > .container > p {
    ============================================ */
 
 .services-overview {
-    padding: var(--spacing-3xl) 0;
+    padding: var(--spacing-2xl) 0;
 }
 
 .services-overview h2 {
     margin-bottom: var(--spacing-2xl);
+}
+
+.service-detail {
+    padding: var(--spacing-2xl) 0;
+}
+
+.service-detail h2 {
+    margin-bottom: var(--spacing-lg);
+}
+
+.service-detail > .container > div {
+    transition: all var(--transition-base);
 }
 
 .services-grid {
@@ -408,6 +420,13 @@ section.final-cta > .container > p {
 .work-item {
     border-radius: var(--radius-lg);
     overflow: hidden;
+    transition: all var(--transition-base);
+    cursor: pointer;
+}
+
+.work-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
 }
 
 .work-image {
@@ -415,12 +434,22 @@ section.final-cta > .container > p {
     aspect-ratio: 1;
     margin-bottom: var(--spacing-md);
     border-radius: var(--radius-lg);
+    transition: transform var(--transition-base);
+}
+
+.work-item:hover .work-image {
+    transform: scale(1.05);
 }
 
 .work-tag {
     font-size: 0.9rem;
     color: var(--color-text-light);
     font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.work-item:hover .work-tag {
+    color: var(--color-pink);
 }
 
 /* ============================================
@@ -447,6 +476,13 @@ section.final-cta > .container > p {
     background-color: var(--color-bg-light);
     border-radius: var(--radius-lg);
     border-left: 4px solid var(--color-pink);
+    transition: all var(--transition-base);
+}
+
+.testimonial:hover {
+    transform: translateX(8px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border-left-color: var(--color-dark);
 }
 
 .testimonial p {
@@ -464,6 +500,11 @@ section.final-cta > .container > p {
     font-size: 0.95rem;
     color: var(--color-text-light);
     font-weight: 500;
+    transition: color var(--transition-fast);
+}
+
+.testimonial:hover .testimonial-author {
+    color: var(--color-pink);
 }
 
 /* ============================================
@@ -515,6 +556,20 @@ section.final-cta > .container > p {
     text-align: center;
     font-size: 0.9rem;
     color: #888888;
+}
+
+/* ============================================
+   FORM STYLES
+   ============================================ */
+
+iframe {
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+    transition: box-shadow var(--transition-base);
+}
+
+iframe:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 }
 
 /* ============================================
