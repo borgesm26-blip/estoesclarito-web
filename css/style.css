@@ -654,12 +654,10 @@ iframe:hover {
 
 .fade-in {
     animation: fadeIn var(--transition-base) ease-out forwards;
-    opacity: 0;
 }
 
 .slide-in-up {
     animation: slideInUp var(--transition-base) ease-out forwards;
-    opacity: 0;
 }
 
 /* ============================================
