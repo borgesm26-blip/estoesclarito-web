@@ -172,6 +172,10 @@ button:focus:not(:focus-visible),
     flex-shrink: 0;
 }
 
+.mobile-menu {
+    display: none;
+}
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -775,12 +779,14 @@ iframe:hover {
         padding: 0 var(--spacing-md);
     }
 
-    .nav-links {
-        display: none;
+    .navbar .btn {
+        padding: var(--spacing-xs) var(--spacing-md);
+        font-size: 0.8rem;
     }
 
     .mobile-menu {
         display: block;
+        order: 2;
     }
 
     .mobile-menu summary {
@@ -803,9 +809,9 @@ iframe:hover {
         padding: var(--spacing-sm) 0;
     }
 
-    .navbar .btn {
-        padding: var(--spacing-xs) var(--spacing-md);
-        font-size: 0.8rem;
+    /* Ocultar nav-links regulares en mobile */
+    .navbar-content > .nav-links {
+        display: none;
     }
 
     h1 {
