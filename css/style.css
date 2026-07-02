@@ -621,10 +621,16 @@ section.final-cta > .container > p {
 }
 
 .footer-brand {
+    display: block;
     font-family: var(--font-heading);
     font-size: 1.3rem;
     font-weight: 700;
     color: var(--color-white);
+    transition: opacity var(--transition-fast);
+}
+
+.footer-brand:hover {
+    opacity: 0.8;
 }
 
 .footer-links {
@@ -796,8 +802,7 @@ iframe:hover {
     }
 
     .navbar .btn {
-        padding: var(--spacing-xs) var(--spacing-md);
-        font-size: 0.8rem;
+        display: none;
     }
 
     .mobile-menu {
