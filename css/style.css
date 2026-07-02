@@ -6,8 +6,8 @@
     /* Colors */
     --color-white: #FFFFFF;
     --color-dark: #161B2D;
-    --color-pink: #E85E95;
-    --color-pink-hover: #D4447A;
+    --color-pink: #C94B84;
+    --color-pink-hover: #A83668;
     --color-text: #3A3A3A;
     --color-text-light: #666666;
     --color-text-dark: #1A1A1A;
@@ -29,6 +29,7 @@
     --lh-tight: 1.2;
     --lh-normal: 1.6;
     --lh-relaxed: 1.8;
+    --lh-generous: 2;
 
     /* Spacing */
     --spacing-xs: 0.5rem;
@@ -90,22 +91,42 @@ h1 {
 h2 {
     font-size: var(--fs-h2);
     margin-bottom: var(--spacing-lg);
+    letter-spacing: -0.01em;
+    line-height: var(--lh-generous);
 }
 
 h3 {
     font-size: var(--fs-h3);
     margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.01em;
 }
 
 p {
     margin-bottom: var(--spacing-md);
     color: var(--color-text);
     line-height: var(--lh-normal);
+    max-width: 65ch;
 }
 
 a {
     color: inherit;
     text-decoration: none;
+}
+
+a:focus,
+button:focus,
+.btn:focus,
+.link-arrow:focus {
+    outline: 3px solid var(--color-pink);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+.btn:focus:not(:focus-visible),
+.link-arrow:focus:not(:focus-visible) {
+    outline: none;
 }
 
 /* ============================================
@@ -299,6 +320,9 @@ section.for-who h2 {
     font-size: 1.3rem;
     color: var(--color-text);
     line-height: var(--lh-relaxed);
+    max-width: 55ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 section.recent-work {
@@ -364,6 +388,9 @@ section.final-cta > .container > p {
     color: var(--color-text-light);
     margin-bottom: var(--spacing-2xl);
     line-height: var(--lh-relaxed);
+    max-width: 60ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-intro {
@@ -377,8 +404,9 @@ section.final-cta > .container > p {
 
 .hero-description {
     font-size: 0.95rem;
-    color: #666;
+    color: var(--color-text);
     margin-bottom: var(--spacing-2xl);
+    max-width: 60ch;
 }
 
 .cta-group {
@@ -600,7 +628,7 @@ section.final-cta > .container > p {
 .footer-bottom {
     text-align: center;
     font-size: 0.9rem;
-    color: #888888;
+    color: #A8A8A8;
 }
 
 /* ============================================
@@ -701,10 +729,12 @@ iframe:hover {
 
     .services-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
     }
 
     .work-grid {
         grid-template-columns: 1fr;
+        gap: var(--spacing-lg);
     }
 
     .testimonials-grid {
@@ -749,6 +779,30 @@ iframe:hover {
         display: none;
     }
 
+    .mobile-menu {
+        display: block;
+    }
+
+    .mobile-menu summary {
+        padding: var(--spacing-sm);
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--color-dark);
+        list-style: none;
+    }
+
+    .mobile-menu summary::-webkit-details-marker {
+        display: none;
+    }
+
+    .mobile-menu[open] .nav-links {
+        display: flex;
+        flex-direction: column;
+        gap: var(--spacing-sm);
+        margin-top: var(--spacing-sm);
+        padding: var(--spacing-sm) 0;
+    }
+
     .navbar .btn {
         padding: var(--spacing-xs) var(--spacing-md);
         font-size: 0.8rem;
@@ -764,6 +818,10 @@ iframe:hover {
 
     section.final-cta h2 {
         font-size: 1.75rem;
+    }
+
+    p {
+        max-width: 100%;
     }
 }
 
