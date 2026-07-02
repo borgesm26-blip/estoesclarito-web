@@ -194,6 +194,22 @@ button:focus:not(:focus-visible),
     color: var(--color-pink);
 }
 
+a[aria-current="page"] {
+    color: var(--color-pink);
+    font-weight: 700;
+    position: relative;
+}
+
+a[aria-current="page"]::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background: var(--color-pink);
+}
+
 /* ============================================
    BUTTONS
    ============================================ */
